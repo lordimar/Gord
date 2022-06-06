@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #a8a3a3;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(51, 50, 50, 0.692);
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  font-family: "Roboto Slab";
+}
+
+.container {
+  width: 1150px;
+  margin: 0 auto;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 40;
+  width: 100%;
+}
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 50px;
+  background-color: black;
+}
+.header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__logo img {
+  width: 49px;
+  height: 40px;
+  margin: 10px 15px 10px 25px;
+}
+.header__link {
+  color: #fff;
+  font-family: "Roboto Slab";
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.4;
+}
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.menu__item {
+  margin: 0px 15px 2px 15px;
+}
+.menu__item:last-child {
+  margin: 0px 15px 0px 20px;
+}
+.menu__item:nth-child(3) {
+  margin: 20px 15px 0px 15px;
+  padding: 0px 0px 15px 0px;
+  border-bottom: 8px solid #173444;
+}
+.menu__link {
+  font-family: "Droid Sans";
+  font-weight: 700;
+  color: #fff;
+  font-size: 16px;
+}
+
+.block-main {
+  position: relative;
+  top: 0;
+  left: 0;
+  min-height: 415px;
+}
+.block-main__img {
+  border-bottom: 8px solid #173444;
+  background: url(../img/Flag_of_South_Korea.svg.png) center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.block-main__title {
+  position: absolute;
+  top: 47%;
+  left: 41%;
+  z-index: 20;
+  font-size: 79px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.hi {
+  background-color: #d5d8d8;
+  padding: 30px 0px 30px 0px;
+}
+.hi__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px 0px 50px 0px;
+}
+.hi__body {
+  color: black;
+  background-color: #fff;
+  margin: 0px 0px 0px 25px;
+  padding: 0px 0px 0px 10px;
+  border: 1px solid #f1f1f1;
+  width: 100%;
+  height: 100%;
+}
+.hi__title {
+  color: #242323;
+  font-size: 50px;
+  margin: 20px 0px 25px 0px;
+}
+.hi__list li {
+  font-size: 18px;
+  line-height: 1.8;
+  margin: 0px 0px 15px 0px;
+  color: #242323;
+}
+.hi__image img {
+  -webkit-box-shadow: 0.1px 0.1px #f1f1f1;
+          box-shadow: 0.1px 0.1px #f1f1f1;
+  width: 470px;
+}

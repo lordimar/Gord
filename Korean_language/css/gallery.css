@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #a8a3a3;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(51, 50, 50, 0.692);
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  font-family: "Roboto Slab";
+}
+
+.container {
+  width: 1150px;
+  margin: 0 auto;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 40;
+  width: 100%;
+}
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 50px;
+  background-color: black;
+}
+.header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__logo img {
+  width: 49px;
+  height: 40px;
+  margin: 10px 15px 10px 25px;
+}
+.header__link {
+  color: #fff;
+  font-family: "Roboto Slab";
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.4;
+}
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.menu__item {
+  margin: 0px 15px 2px 15px;
+}
+.menu__item:last-child {
+  margin: 0px 15px 0px 20px;
+}
+.menu__item:nth-child(2) {
+  margin: 20px 15px 0px 15px;
+  padding: 0px 0px 15px 0px;
+  border-bottom: 8px solid #173444;
+}
+.menu__link {
+  font-family: "Droid Sans";
+  font-weight: 700;
+  color: #fff;
+  font-size: 16px;
+}
+
+.block-main {
+  position: relative;
+  top: 0;
+  left: 0;
+  min-height: 415px;
+}
+.block-main__img {
+  border-bottom: 8px solid #173444;
+  background: url(../img/Flag_of_South_Korea.svg.png) center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.block-main__title {
+  position: absolute;
+  top: 47%;
+  left: 38%;
+  z-index: 20;
+  font-size: 79px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.section {
+  padding: 40px 0px 10px 0px;
+  background-color: #d5d8d8;
+}
+.block-section__body {
+  text-align: center;
+  font-size: 17px;
+  background-color: #fff;
+  margin-bottom: 40px;
+}
+.block-section__title {
+  padding: 10px 0px 0px 0px;
+}
+.block-section__text_1 {
+  padding: 20px 0px 30px 0px;
+}
+.block-section__text_2 {
+  padding: 20px 0px 5px 0px;
+}
+.block-section__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px -15px 5px;
+}
+.block-section__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33.333333333%;
+          flex: 0 1 33.333333333%;
+  padding: 0px 15px 5px;
+  margin-bottom: 20px;
+}
+.block-section__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  padding-bottom: 120px;
+}
+.block-section__image {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 350px;
+          flex: 0 0 350px;
+}
+.block-section__image img {
+  max-width: 100%;
+  height: 100%;
+}
